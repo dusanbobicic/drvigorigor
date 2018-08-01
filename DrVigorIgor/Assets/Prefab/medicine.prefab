@@ -39,6 +39,7 @@ GameObject:
   - component: {fileID: 222903063209804412}
   - component: {fileID: 114777894689036154}
   - component: {fileID: 114020747893294222}
+  - component: {fileID: 114851035589899660}
   m_Layer: 5
   m_Name: medicine
   m_TagString: Untagged
@@ -192,6 +193,23 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114851035589899660
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1272678559725594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c44c09329e160b48814a7d0f6cd5579, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  medName: Unnamed medicine
+  dosage: 0
+  timesPerDay: 0
+  hours: []
+  notes: No special notes.
+  texts: []
 --- !u!114 &114855512167842334
 MonoBehaviour:
   m_ObjectHideFlags: 1

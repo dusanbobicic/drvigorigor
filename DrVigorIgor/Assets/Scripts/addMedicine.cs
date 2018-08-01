@@ -10,7 +10,7 @@ public class addMedicine : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        canvas = GameObject.Find("container");
+        canvas = GameObject.Find("Medicines Content");
     }
 
     public void newMedPanel() {
