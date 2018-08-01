@@ -39,9 +39,9 @@ GameObject:
   - component: {fileID: 222903063209804412}
   - component: {fileID: 114777894689036154}
   - component: {fileID: 114020747893294222}
-  - component: {fileID: 114851035589899660}
+  - component: {fileID: 114290574238262306}
   m_Layer: 5
-  m_Name: medicine
+  m_Name: Medicine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -133,6 +133,25 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114290574238262306
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1272678559725594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c44c09329e160b48814a7d0f6cd5579, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  medName: Unnamed medicine
+  dosage: 0
+  timesPerDay: 0
+  hours:
+  - 123
+  - kdas
+  - adsdsa
+  notes: No special notes.
 --- !u!114 &114690342303109804
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -193,23 +212,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &114851035589899660
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1272678559725594}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c44c09329e160b48814a7d0f6cd5579, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  medName: Unnamed medicine
-  dosage: 0
-  timesPerDay: 0
-  hours: []
-  notes: No special notes.
-  texts: []
 --- !u!114 &114855512167842334
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -230,7 +232,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 681f999bd4351b849b0c40a6d5a454a5, type: 3}
     m_FontSize: 70
     m_FontStyle: 1
     m_BestFit: 0
