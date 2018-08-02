@@ -10,6 +10,7 @@ public class SaveManager : MonoBehaviour {
         DontDestroyOnLoad(gameObject);
         Instance = this;
         Load();
+        Debug.Log(PlayerPrefs.GetString("DrIgorVigorSave"));
     }
     public void Save() {
         PlayerPrefs.SetString("DrIgorVigorSave", Helper.Serialize<SaveState>(state));

@@ -61,14 +61,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\addMedicine.cs" />
+    <Compile Include="Assets\Scripts\CanvasController.cs" />
     <Compile Include="Assets\Scripts\FullscreenSprite.cs" />
     <Compile Include="Assets\Scripts\Helper.cs" />
     <Compile Include="Assets\Scripts\Medicine.cs" />
-    <Compile Include="Assets\Scripts\MedicineContainer.cs" />
+    <Compile Include="Assets\Scripts\newMedPanelController.cs" />
     <Compile Include="Assets\Scripts\SaveManager.cs" />
     <Compile Include="Assets\Scripts\SaveState.cs" />
-    <Compile Include="Assets\Scripts\UIManeger.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/LENOVO/Desktop/medrock/app/DrVigorIgor/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
