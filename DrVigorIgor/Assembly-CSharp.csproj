@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scripts\addMedicine.cs" />
     <Compile Include="Assets\Scripts\AnimationControler.cs" />
     <Compile Include="Assets\Scripts\AnimController.cs" />
+    <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\ChatboxController.cs" />
     <Compile Include="Assets\Scripts\FullscreenSprite.cs" />
     <Compile Include="Assets\Scripts\HealthController.cs" />
