@@ -9,12 +9,14 @@ public class SaveManager : MonoBehaviour {
     private void Awake() {
         DontDestroyOnLoad(gameObject);
         Instance = this;
+        //newSave();
         Load();
-
-        Debug.Log(state);
+        
     }
+
     public void Save() {
         PlayerPrefs.SetString("DrIgorVigorSave", Helper.Serialize<SaveState>(state));
+        Debug.Log(Helper.Serialize<SaveState>(state));
     }
     public void Load() {
         if (PlayerPrefs.HasKey("DrIgorVigorSave")) {
@@ -25,5 +27,16 @@ public class SaveManager : MonoBehaviour {
             Save();
             Debug.Log("Creating new save.");
         } 
+    }
+    public void AddMedicine(Medicine med) {
+        state.medicines.Add(med);
+        Save();
+    }
+
+    public void newSave()
+    {
+        state = new SaveState();
+        Save();
+        Debug.Log("Creating new save.");
     }
 }

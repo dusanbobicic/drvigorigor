@@ -12,6 +12,11 @@ public class HealthController : MonoBehaviour {
     public Slider hp;
     public float howMuch;
 
+    private void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
+
     public void HealTheSeal()
     {
 
