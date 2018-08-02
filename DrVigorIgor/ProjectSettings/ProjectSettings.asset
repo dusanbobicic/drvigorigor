@@ -755,9 +755,9 @@ PlayerSettings:
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: 306d3bf8-d423-4e41-8fdc-d3259ee9f790
+  cloudProjectId: 64a68219-1cfb-453b-ab51-fd0e98c83300
   projectName: DrVigorIgor
-  organizationId: unity_x2lmzkcvpli2fw
+  organizationId: ottenskjold
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
