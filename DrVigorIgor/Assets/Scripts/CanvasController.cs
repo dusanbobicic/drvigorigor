@@ -30,5 +30,22 @@ public class CanvasController : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Escape)) { Application.Quit(); }
     }
 
+    public void MuteToggle()
+    {
+        bool music = !PlayerPrefs.HasKey("Music") || PlayerPrefs.GetInt("Music") == 1 ? true : false;
+        if (music)
+        {
+            MusicController.Instance.Stop();
+        } else
+        {
+            MusicController.Instance.Play();
+        }
+    }
 
+    public void playMusic() {
+        MusicController.Instance.Play();
+    }
+    public void stopMusic() {
+        MusicController.Instance.Stop();
+    }
 }

@@ -60,6 +60,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\AnimationAutoDestroy.cs" />
     <Compile Include="Assets\Scripts\AnimationControler.cs" />
     <Compile Include="Assets\Scripts\AnimController.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />

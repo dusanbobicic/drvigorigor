@@ -65,7 +65,6 @@ public class newMedPanelController : MonoBehaviour {
         int counter = medicineList.Count;
         newMedicine.GetComponent<RectTransform>().anchoredPosition = new Vector3(0, (-150) * (2 * (counter) + 1), 0);
 
-
         // add medicine to save state
         SaveManager.Instance.AddMedicine(m);
 
