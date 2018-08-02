@@ -10,7 +10,7 @@ public class RecivingApi : MonoBehaviour {
     private List<Perscription> perscriptions;
     // Use this for initialization
     void Start () {
- 
+
             
     }
 
@@ -24,7 +24,11 @@ public class RecivingApi : MonoBehaviour {
         for (int i = 0; i < perscriptions.Count; i++)
         {
 
+
             Debug.Log(perscriptions[i].Interval);
+
+
+
         }
 
     }

@@ -1,8 +1,10 @@
 ﻿using System.IO;
 using System.Xml.Serialization;
 
-public static class Helper {
-    public static string Serialize<T>(this T toSerialize) {
+public static class Helper
+{
+    public static string Serialize<T>(this T toSerialize)
+    {
         XmlSerializer xml = new XmlSerializer(typeof(T));
         StringWriter w = new StringWriter();
         xml.Serialize(w, toSerialize);
