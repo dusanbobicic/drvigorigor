@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/medOverview.unity
     guid: 5031cc10378b943479f6196080e575d7
+  - enabled: 1
+    path: Assets/Scenes/mainMenu.unity
+    guid: f004c121a1b69314da58932374798aee
   m_configObjects: {}
