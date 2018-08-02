@@ -8,8 +8,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <ProjectGuid>{914AA489-2466-3ECC-60D4-EC26F6A42E67}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -53,9 +52,6 @@
     <UnityVersion>2018.2.1f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="BarcodeAPI">
-      <HintPath>Assets\Plugins\BarcodeAPI.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -64,9 +60,30 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\HttpClient\Dispatcher\Dispatcher.cs" />
+    <Compile Include="Assets\HttpClient\Dispatcher\IDispatcher.cs" />
+    <Compile Include="Assets\HttpClient\Enums\ContentReadAction.cs" />
+    <Compile Include="Assets\HttpClient\Enums\HttpAction.cs" />
+    <Compile Include="Assets\HttpClient\Enums\HttpCompletionOption.cs" />
+    <Compile Include="Assets\HttpClient\Example\ExampleSceneManagerController.cs" />
+    <Compile Include="Assets\HttpClient\HttpActions\HttpBase.cs" />
+    <Compile Include="Assets\HttpClient\HttpActions\HttpDelete.cs" />
+    <Compile Include="Assets\HttpClient\HttpActions\HttpGet.cs" />
+    <Compile Include="Assets\HttpClient\HttpActions\HttpPatch.cs" />
+    <Compile Include="Assets\HttpClient\HttpActions\HttpPost.cs" />
+    <Compile Include="Assets\HttpClient\HttpActions\HttpPut.cs" />
+    <Compile Include="Assets\HttpClient\HttpClient.cs" />
+    <Compile Include="Assets\HttpClient\HttpContent\ByteArrayContent.cs" />
+    <Compile Include="Assets\HttpClient\HttpContent\FormUrlEncodedContent.cs" />
+    <Compile Include="Assets\HttpClient\HttpContent\IHttpContent.cs" />
+    <Compile Include="Assets\HttpClient\HttpContent\MultiPartContent.cs" />
+    <Compile Include="Assets\HttpClient\HttpContent\MultipartFormDataContent.cs" />
+    <Compile Include="Assets\HttpClient\HttpContent\StreamContent.cs" />
+    <Compile Include="Assets\HttpClient\HttpContent\StringContent.cs" />
+    <Compile Include="Assets\HttpClient\Messages\HttpResponseMessage.cs" />
+    <Compile Include="Assets\HttpClient\Messages\UploadStatusMessage.cs" />
     <Compile Include="Assets\Scripts\addMedicine.cs" />
     <Compile Include="Assets\Scripts\AnimationControler.cs" />
-    <Compile Include="Assets\Scripts\AnimController.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\ChatboxController.cs" />
     <Compile Include="Assets\Scripts\FullscreenSprite.cs" />
@@ -79,6 +96,7 @@
     <Compile Include="Assets\Scripts\SaveManager.cs" />
     <Compile Include="Assets\Scripts\SaveState.cs" />
     <Compile Include="Assets\Scripts\UIManeger.cs" />
+    <None Include="Assets\HttpClient\readme.txt" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/flopek/Desktop/VigorIgor/DrVigorIgor/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
@@ -283,8 +301,14 @@
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
+    <Reference Include="BarcodeAPI">
+      <HintPath>C:/Users/flopek/Desktop/VigorIgor/DrVigorIgor/Assets/Plugins/BarcodeAPI.dll</HintPath>
+    </Reference>
     <Reference Include="CldAPI">
       <HintPath>C:/Users/flopek/Desktop/VigorIgor/DrVigorIgor/Assets/Plugins/CldAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="Dynamsoft.BarcodeReader">
+      <HintPath>C:/Users/flopek/Desktop/VigorIgor/DrVigorIgor/Assets/Plugins/Dynamsoft.BarcodeReader.dll</HintPath>
     </Reference>
     <Reference Include="System.Data">
       <HintPath>C:/Users/flopek/Desktop/VigorIgor/DrVigorIgor/Assets/Plugins/System.Data.dll</HintPath>
@@ -294,9 +318,6 @@
     </Reference>
     <Reference Include="UnityEngine.StandardEvents">
       <HintPath>C:/Users/flopek/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
-    </Reference>
-    <Reference Include="Dynamsoft.BarcodeReader">
-      <HintPath>C:/Users/flopek/Desktop/VigorIgor/DrVigorIgor/Assets/Plugins/Dynamsoft.BarcodeReader.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
