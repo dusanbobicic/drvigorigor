@@ -68,6 +68,10 @@
     <Compile Include="Assets\Scripts\newMedPanelController.cs" />
     <Compile Include="Assets\Scripts\SaveManager.cs" />
     <Compile Include="Assets\Scripts\SaveState.cs" />
+    <Compile Include="Assets\SimpleAndroidNotifications\NotificationExample.cs" />
+    <Compile Include="Assets\SimpleAndroidNotifications\NotificationIcon.cs" />
+    <Compile Include="Assets\SimpleAndroidNotifications\NotificationManager.cs" />
+    <Compile Include="Assets\SimpleAndroidNotifications\NotificationParams.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/LENOVO/Desktop/medrock/app/DrVigorIgor/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
