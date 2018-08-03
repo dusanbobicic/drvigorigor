@@ -23,8 +23,8 @@ public class ChatboxController : MonoBehaviour {
         di[0,0] = "Sometimes Neal doesn't like his medicine.";
         di[0,1] = "He knows it's important to take it to get better, though.";
 
-        di[1,0] = "Diabetes is a disease that affects how the body uses glucose.";
-        di[1,1] = "Your body needs glucose to keep running!";
+        di[1,0] = "Almost ten percent of all people on the world have diabetes.";
+        di[1,1] = "That's one for every ten people you meet!";
 
         di[2, 0] = "It's very important to take your medicine just as the doctor suggests.";
         di[2, 1] = "Not taking medicine, or not taking it correctly, can make you feel terrible!";
@@ -34,8 +34,8 @@ public class ChatboxController : MonoBehaviour {
 
         tutorialLog[0] = "Hi, Karolina!";
         tutorialLog[1] = "I see this is your first day with Neal.";
-        tutorialLog[2] = "Neal has diabetes, and needs medication daily.";
-        tutorialLog[3] = "What? You have diabetes too?";
+        tutorialLog[2] = "This is Neal. He is sick, and needs medication daily.";
+        tutorialLog[3] = "What? You're sick too?";
         tutorialLog[4] = "Then you can take your medicine together with Neal!";
         tutorialLog[5] = "Don't worry.";
         tutorialLog[6] = "Neal and I will remind you when it's time to take your medication.";

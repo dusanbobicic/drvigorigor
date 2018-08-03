@@ -4,14 +4,28 @@ using UnityEngine;
 using UnityEngine.UI;
 public class AnimationControler : MonoBehaviour
 {
-    List<string> spriteNames = new List<string> { "wink", "blink", "sick", "heart", "lick" };
+    List<string> spriteNames = new List<string> { "wink", "blink", "heart", "lick", "blush" };
 
     public Image bill;
+
+    private static Sprite neal;
+    private static Sprite wink;
+    private static Sprite blink;
+    private static Sprite sick;
+    private static Sprite heart;
+    private static Sprite lick;
+    private static Sprite blush;
 
     // Use this for initialization
     void Start()
     {
-
+        neal = Resources.Load<Sprite>("sprites/seal-_0013_base");
+        wink = Resources.Load<Sprite>("sprites/seal-_0001_wink");
+        blink = Resources.Load<Sprite>("sprites/seal-_0000_blink");
+        sick = Resources.Load<Sprite>("sprites/seal-_0010_sick");
+        heart = Resources.Load<Sprite>("sprites/seal-_0006_heart-2");
+        lick = Resources.Load<Sprite>("sprites/seal-_0002_wink-tongue-2");
+        blush = Resources.Load<Sprite>("sprites/seal-_0012_blush");
     }
 
     // Update is called once per frame
@@ -22,77 +36,48 @@ public class AnimationControler : MonoBehaviour
 
     public static Sprite getAnimationImg(string imgName)
     {
-        // List < Sprite > buba = new List<Sprite>();
-        Sprite buba;
-        Sprite img;
-
-
-
-
-
         switch (imgName)
-                         {
+        {
             case "wink":
                 {
-                    img = Resources.Load<Sprite>("sprites/seal-_0001_wink");
-
-                    break;
+                    return wink;
                 }
             case "blink":
                 {
-                    img = Resources.Load<Sprite>("sprites/seal-_0000_blink");
-
-                    break;
+                    return blink;
                 }
             case "sick":
                 {
-                    img = Resources.Load<Sprite>("sprites/seal-_0010_sick");
-                    break;
+                    return sick;
                 }
             case "heart":
                 {
-                    img = Resources.Load<Sprite>("sprites/seal-_0006_heart-2");
-
-                    break;
+                    return heart;
                 }
             case "lick":
                 {
-                    img = Resources.Load<Sprite>("sprites/seal-_0002_wink-tongue-2");
-
-                    break;
+                    return lick;
+                }
+            case "blush":
+                {
+                    return blush;
                 }
             default:
                 {
-                    img = Resources.Load<Sprite>("sprites/seal-_0013_base");
-
-                    break;
+                    return neal;
                 }
 
         }
-
-        // buba.Add(img);
-
-        return img;
     }
-
 
     public void changeSpriteRandom()
     {
-
         int i = Random.Range(0, spriteNames.Count);
         bill.sprite = getAnimationImg(spriteNames[i]);
-
-
-
     }
 
     public void changeSpriteBack()
     {
-
-        //int i = Random.Range(0, spriteNames.Count);
         bill.sprite = getAnimationImg("");
-
-
-
     }
 }

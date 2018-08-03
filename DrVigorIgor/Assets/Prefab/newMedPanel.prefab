@@ -773,7 +773,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Medication dose...
+  m_Text: Dose in mg...
 --- !u!114 &114514024967669006
 MonoBehaviour:
   m_ObjectHideFlags: 1
